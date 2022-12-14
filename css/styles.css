@@ -446,7 +446,8 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
   margin-top: calc(-1 * var(--gap48));*/
 }
 
-.gallery-list .item {
+.gallery-list .link {
+  display: inline-block;
   flex-basis: calc((100% - 2 * var(--gap24)) / 3);
   /*margin-left: var(--gap24);
   margin-top: var(--gap48);*/
@@ -454,7 +455,8 @@ ul {margin-top: 0; margin-bottom: 0; padding-left: 0;} */
   overflow: hidden;
 }
 
-.gallery-list .item:hover {
+.gallery-list .link:hover,
+.gallery-list .link:focus {
   box-shadow: var(--shadow-secondary);
 }
 
